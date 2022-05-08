@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap");
+
+body {
+  font-family: "Space Mono";
+  font-weight: 400;
+  color: white;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+a {
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 5em;
+}
+
+.zero-pd {
+  padding: 0;
+}
+
+.small-pd {
+  padding: 1em 5em;
+}
+
+.yellow-bg {
+  background-color: #fcf300;
+}
+
+.blue-bg {
+  background-color: #2f4eff;
+}
+
+.yellow-text {
+  color: #fcf300;
+}
+
+.blue-text {
+  color: #2f4eff;
+}
+
+.projects {
+  max-width: 1000px;
+  margin: 30px auto;
+  background-color: #2f4eff;
+  padding: 1em 5em;
+  height: 2em;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+
+.projects.active {
+  height: 200px;
+  transition: height 0.3s ease-in-out;
+}
+
+.projects svg {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.projects.active svg {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project {
+  padding-top: 1.5em;
+}
+
